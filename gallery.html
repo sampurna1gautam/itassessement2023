@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My gallery</title>
+    <style>
+        body {
+            background-color: rgb(97, 102, 235);
+            margin: 0;
+            padding: 0;
+            padding-top: 70px; /* To avoid the main content going under the fixed header */
+        }
+        header {
+            background-color: rgb(156, 222, 250);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 60px; /* This makes the header bigger */
+            line-height: 60px; /* This vertically centers the text in the header */
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center; /* This horizontally centers the text in the header */
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 150px; /* This increases the space between the items in the header */
+        }
+        nav ul li a {
+            text-decoration: none;
+            font-size: 30px; /* This makes the text in the header bigger */
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+            margin: 0 auto;
+            width: 10%; /* Or any other value that fits your design */
+        }
+        .content .image {
+            flex: 1;
+        }
+        .content .text {
+            flex: 1;
+        }
+        img {
+            width: 80%; /* This reduces the size of the image */
+            height: 500px;
+        }
+        .gallery {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        footer {
+            background-color: rgb(156, 222, 250);
+            text-align: center;
+            padding: 20px 0;
+            bottom: 0;
+            width: 100%;
+        }
+        footer p {
+            margin: 0;
+        }
+        footer a {
+            color: black;
+            text-decoration: none;
+        }
+        main {
+            margin-bottom: 70px; /* Add this line */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="blog">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="gallery">
+            <a href="large/1.jpg" target="_blank">
+                <img src="1.jpg" width="" height="100" alt="Description of Image 1">
+                <p>Description of Image 1</p>
+            </a>
+            <a href="large/image6.jpg" target="_blank">
+                <img src="image6.jpg" width="100" height="100" alt="Description of Image 2">
+                <p>Description of Image 2</p>
+            </a>
+            <a href="large/2.jpg" target="_blank">
+                <img src="2.jpg" width="100" height="100" alt="Description of Image 3">
+                <p>Description of Image 3</p>
+            </a>
+            <a href="large/image5.jpg" target="_blank">
+                <img src="image5.jpg" width="100" height="100" alt="Description of Image 4">
+                <p>Description of Image 4</p>
+            </a>
+           
+            <!-- Add more images as needed -->
+        </div>
+    </main>
+    <footer>
+        <p><a href="https://github.com/yourgithub">GitHub</a></p>
+        <p>123 Main Street, Anytown, USA</p>
+        <p>Email: example@example.com</p>
+        <p>Phone: (123) 456-7890</p>
+    </footer>
+</body>
+</html>

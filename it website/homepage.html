@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Index</title>
+    <style>
+        body {
+            background-color: rgb(106, 111, 244);
+            margin: 0;
+            padding: 0;
+            padding-top: 70px; /* To avoid the main content going under the fixed header */
+        }
+        header {
+            background-color: rgb(156, 222, 250);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 70px; /* This makes the header bigger */
+            line-height: 60px; /* This vertically centers the text in the header */
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center; /* This horizontally centers the text in the header */
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 150px; /* This increases the space between the items in the header */
+        }
+        nav ul li a {
+            text-decoration: none;
+            font-size: 40px; /* This makes the text in the header bigger */
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+            margin: 0 auto;
+            width: 80%; /* Or any other value that fits your design */
+        }
+        .content .image {
+            flex: 1;
+        }
+        .content .text {
+            flex: 1;
+        }
+        img {
+            width: 60%; /* This reduces the size of the image */
+            height: auto;
+        }
+        footer {
+            background-color: rgb(156, 222, 250);
+            text-align: center;
+            padding: 20px 0;
+            bottom: 10;
+            width: 100%;
+        }
+        footer p {
+            margin: 0;
+        }
+        footer a {
+            color: black;
+            text-decoration: none;
+        }
+    </style>
+    <style>
+        /* Your existing styles here */
+
+        /* Styles for the slider */
+        .slider {
+            width: 100%;
+            height: 700px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .slides {
+            display: none;
+            width: 100%;
+            height: 700px;
+        }
+
+        .slides img {
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Class to show the current slide */
+        .active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Your existing header here -->
+    </header>
+
+    <!-- The slider -->
+    <div class="slider">
+        <div class="slides active">
+            <img src="image1.jpg" alt="Image 1">
+        </div>
+        <div class="slides">
+            <img src="image2.jpg" alt="Image 2">
+        </div>
+        <div class="slides">
+            <img src="image3.jpg" alt="Image 3">
+        </div>
+    </div>
+
+    <!-- The rest of your HTML -->
+
+    <footer>
+        <!-- Your existing footer here -->
+    </footer>
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("slides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            slides[slideIndex-1].style.display = "block";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="resume.html">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1 style="text-align: center;">'Heaven of happy hooves' </h1>
+    <main>
+        <div class="content">
+            <div class="image">
+                <img src="me.jpg">
+            </div>
+            <div class="text">
+                <p>Welcome to our page. Heaven of happy hooves is the dog shelter place where we can find various different dogs and sometimes wee do save cats too. we are really glad you see in our page and do wish that you will definetly choose one taime in you life. waiting for that time !!.</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p><a href="https://github.com/new">GitHub</a></p>
+        <p><a href="https://mail.google.com/"></a></p>
+        <p>Thapathali kathmandu, Nepal</p>
+        <p>Email: sampurnagautam@gmail.com</p>
+        <p>Phone: (000) 996-0228</p>
+    </footer>
+</body>
+</html>

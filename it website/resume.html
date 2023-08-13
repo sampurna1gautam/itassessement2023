@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume</title>
+    <style>
+        body {
+            background-color: rgb(177, 144, 238);
+            margin: 0;
+            padding: 0;
+            padding-top: 70px; /* To avoid the main content going under the fixed header */
+        }
+        header {
+            background-color: rgb(156, 222, 250);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 60px; /* This makes the header bigger */
+            line-height: 60px; /* This vertically centers the text in the header */
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center; /* This horizontally centers the text in the header */
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 150px; /* This increases the space between the items in the header */
+        }
+        nav ul li a {
+            text-decoration: none;
+            font-size: 20px; /* This makes the text in the header bigger */
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+            margin: 0 auto;
+            width: 80%; /* Or any other value that fits your design */
+        }
+        .content .image {
+            flex: 1;
+        }
+        .content .text {
+            flex: 1;
+        }
+        img {
+            width: 50%; /* This reduces the size of the image */
+            height: auto;
+        }
+        footer {
+            background-color: rgb(156, 222, 250);
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        footer p {
+            margin: 0;
+        }
+        footer a {
+            color: black;
+            text-decoration: none;
+        }
+    </style>
+    <style>
+        /* Your styles here */
+
+        /* Additional styles for the button */
+        .reach-out-btn {
+            display: block;
+            width: 500px;
+            height: 70px;
+            margin: 20px auto;
+            background-color: #f4f808;
+            color: #030700;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0px 7px 0px #373E4A;
+            font-size: 60px;
+            cursor: pointer;
+        }
+
+        .reach-out-btn:active {
+            box-shadow: 0px 2px 0px #373E4A;
+            transform: translateY(3px);
+        }
+    </style>
+     <style>
+        /* Your existing styles here */
+        /* Styles for the main content area */
+        .main-content {
+            display: flex;
+            justify-content: flex-start;
+            padding-left: 30px; /* Add some space between the button and the image */
+        }
+        .image-container {
+            width: 50%; /* Or whatever width you prefer */
+        }
+        .image-container img {
+            width: 65%; /* Make the image fill its container */
+        }
+    </style>
+     <style>
+        /* Previous CSS omitted for brevity */
+
+        .page-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: calc(100vh - 140px); /* This ensures the page wrapper takes up the rest of the space on the page, excluding the header and footer height */
+        }
+        .resume {
+            width: 30%; /* Or whatever width you prefer */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="page-wrapper">
+        <div class="resume">
+            <table border="10">
+                <tr>
+                    <th colspan="2">Personal Information</th>
+                </tr>
+                <tr>
+                    <td>Name</td>
+                    <td>sampurna gautam</td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>samputnagautam834@gmail.com</td>
+                </tr>
+           
+                <tr>
+                    <th colspan="2">Education</th>
+                </tr>
+                <tr>
+                    <td>School</td>
+                    <td>UWE Bristol University</td>
+                </tr>
+                <tr>
+                    <td>Degree</td>
+                    <td>Bachelors in Computing</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <table border="10">
+                            <tr>
+                                <th colspan="4">Skills</th>
+                            </tr>
+                            <tr>
+                                <td>React</td>
+                                <td rowspan="2">Python</td>
+                                <td>Javascript</td>
+                            </tr>
+                            <tr>
+                                <td>C/C++</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+     <footer>
+        <p><a href="https://github.com/new">GitHub</a></p>
+        <p><a href="https://mail.google.com/"></a></p>
+        <p>Thapathali kathmandu, Nepal</p>
+        <p>Email: sampurnagautam@gmail.com</p>
+        <p>Phone: (000) 996-0228</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My gallery</title>
+    <style>
+        body {
+            background-color: rgb(210, 123, 239);
+            margin: 0;
+            padding: 0;
+            padding-top: 70px; /* To avoid the main content going under the fixed header */
+        }
+        header {
+            background-color: rgb(156, 222, 250);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 60px; /* This makes the header bigger */
+            line-height: 60px; /* This vertically centers the text in the header */
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center; /* This horizontally centers the text in the header */
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 150px; /* This increases the space between the items in the header */
+        }
+        nav ul li a {
+            text-decoration: none;
+            font-size: 30px; /* This makes the text in the header bigger */
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+            margin: 0 auto;
+            width: 10%; /* Or any other value that fits your design */
+        }
+        .content .image {
+            flex: 1;
+        }
+        .content .text {
+            flex: 1;
+        }
+        img {
+            width: 80%; /* This reduces the size of the image */
+            height: 500px;
+        }
+        .gallery {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        footer {
+            background-color: rgb(156, 222, 250);
+            text-align: center;
+            padding: 20px 0;
+            bottom: 0;
+            width: 100%;
+        }
+        footer p {
+            margin: 0;
+        }
+        footer a {
+            color: black;
+            text-decoration: none;
+        }
+        main {
+            margin-bottom: 70px; /* Add this line */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="gallery">
+            <a href="large/1.jpg" target="_blank">
+                <img src="1.jpg" width="20" height="20" alt="sunflower">
+                <p>The sunflower is named from its massive, brilliant flowers, which mimic the sun in shape and appearance. It has a rough, hairy stem and huge, rough, coarsely toothed leaves. It can reach a height of 3 metres (10 feet), and the enormous flower heads may reach a diameter of 30 cm (11.81 inches). The flower head is made up of thousands of tiny blooms known as florets. The sunflower's centre, where the seeds develop, is covered with small blooms that bees like. The sterile florets are the outside petal-bearing florets, which might be yellow, red, orange, or various colours. The sunflower is distinguished by the fact that it rotates to face the sun, a process known as heliotropism.</p>
+            </a>
+            <a href="large/image6.jpg" target="_blank">
+                <img src="2.jpg" width="20" height="20" alt="golden hour">
+                <p>Golden Hour refers to the period of daytime shortly after sunrise or before sunset, during which daylight is redder and softer than when the Sun is higher in the sky. This is considered one of the best times for photography due to the unique and beautiful lighting conditions it presents.</p>
+            </a>
+            <a href="large/2.jpg" target="_blank">
+                <img src="3.jpg" width="20" height="20" alt="puppy">
+                <p> A puppy is a young domestic dog, typically less than a year old. They are known for their energetic behavior, adorable looks, and playful nature. Puppies require a lot of care including feeding, training, socializing, and frequent veterinary check-ups for vaccinations and overall health. They can bring a lot of joy and companionship to a home, and they eventually grow into adult dogs with their own unique personalities and behaviors.</p>
+            </a>
+            <a href="large/image5.jpg" target="_blank">
+                <img src="4.jpg" width="20" height="20" alt="butterfly">
+                <p>Butterflies are brightly colored insects known for their remarkable lifecycle and striking patterns. They are a part of the Lepidoptera class, which also includes moths. With over 20,000 species globally, they come in all shapes and sizes, from a tiny 1/8 inch to a huge 12 inches.</p>
+            </a>
+           
+            <!-- Add more images as needed -->
+        </div>
+    </main>
+    <footer>
+        <p><a href="https://github.com/new">GitHub</a></p>
+        <p><a href="https://mail.google.com/"></a></p>
+        <p>Thapathali kathmandu, Nepal</p>
+        <p>Email: sampurnagautam@gmail.com</p>
+        <p>Phone: (000) 996-0228</p>
+    </footer>
+</body>
+</html>

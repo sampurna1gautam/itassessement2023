@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Visit the gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .image-wrapper {
+            border: 5px solid black;
+            padding: 5px;
+        }
+
+        .resized-image-wrapper {
+            display: inline-block;
+            margin: 20px 50px;
+        }
+
+        .aligned-image {
+            float: right; /* Change to 'left' if you want to align left */
+            margin: 20px;
+        }
+
+        .spaced-image {
+            margin: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Image Web Page</h1>
+
+        <!-- Image 1 -->
+        <div class="image-wrapper">
+            <img src="image1.jpg" alt="Image 1" width="150" height="200">
+        </div>
+
+        <!-- Image 2 -->
+        <div class="resized-image-wrapper">
+            <a href="image2.jpg" target="_blank">
+                <img src="image2.jpg" alt="Image 2" width="100" height="100">
+            </a>
+        </div>
+
+        <!-- Image 3 -->
+        <div class="aligned-image">
+            <img src="image3.jpg" alt="Image 3">
+        </div>
+
+        <!-- Image 4 -->
+        <div class="spaced-image">
+            <img src="image4.jpg" alt="Image 4">
+        </div>
+
+        <!-- Text -->
+        <p>
+            i love that car its damm good 
+        </p>
+    </div>
+</body>
+</html>

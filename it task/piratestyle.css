@@ -1,0 +1,114 @@
+/* Reset some default styles */
+body, h1, h5, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Main container */
+.main_content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 8px solid black; /* Added black border on all sides */
+}
+
+/* Header */
+header {
+    background-color: #d6a658;
+    color: #4b210e;
+    text-align: center;
+    padding: 10px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Navigation */
+.leftcolumn {
+    background-color: #f7e9b2; /* Added different background color */
+    padding: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #d6a658;
+}
+
+ul li a.active {
+    font-weight: bold;
+    color: #FFD700; 
+}
+
+/* Right column */
+.rightcolumn {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.rightcolumn img {
+    max-width: 100%;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #d6a658;
+    color: #4b210e;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #3f31dc; 
+    text-decoration: none;
+}
+
+/* Left column content */
+.subleftcol {
+    background-color: #f7e9b2; /* Added different background color */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Add a border to the header */
+header {
+    border: 8px solid black;
+    border-bottom: none;
+}
+
+/* Add a border to the left column */
+.leftcolumn {
+    border: 8px solid black;
+    border-right: none;
+}
+
+/* Add a border to the right column */
+.rightcolumn {
+    border: 8px solid black;
+    border-left: none;
+}
+
+/* Add a border to the footer */
+footer {
+    border: 8px solid black;
+    border-top: none;
+}
